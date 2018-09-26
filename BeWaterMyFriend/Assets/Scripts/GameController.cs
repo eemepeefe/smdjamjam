@@ -28,11 +28,11 @@ public class GameController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             fishScript.SetFishLeftPosition();
         }
-        if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             fishScript.SetFishRightPosition();
         }
