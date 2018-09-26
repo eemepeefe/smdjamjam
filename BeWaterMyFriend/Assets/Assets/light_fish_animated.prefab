@@ -81,6 +81,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4396484782887884}
   - component: {fileID: 137347414392007812}
+  - component: {fileID: 114241167888756644}
   m_Layer: 0
   m_Name: pececillo
   m_TagString: Untagged
@@ -165,7 +166,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1186192931022730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.664497, y: -1.0320637, z: -7.162476}
+  m_LocalPosition: {x: 2.3720393, y: -0.63361216, z: 91.03531}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4539358541056234}
@@ -233,6 +234,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114241167888756644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515111459857206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf34f618fc88a046a518d939c0bb6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emissive: {fileID: 0}
+  leftLimit: 0
+  rightLimit: 0
 --- !u!137 &137347414392007812
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
