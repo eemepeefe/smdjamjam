@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4406070424925520}
   - component: {fileID: 33929112813764434}
   - component: {fileID: 23607043407009092}
+  - component: {fileID: 114726632048807486}
   m_Layer: 0
   m_Name: lata_n
   m_TagString: LessLight
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1324540083070694}
   m_Mesh: {fileID: 4300000, guid: d326e4b31e0a1324597cf417aafd5470, type: 3}
+--- !u!114 &114726632048807486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1324540083070694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1322e4d0262980408f781a897887973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emissive: {fileID: 2800000, guid: 495f8a2edeea3504797d2a6dd46845f5, type: 3}

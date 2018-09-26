@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\FishMovement.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\LightController.cs" />
+    <Compile Include="Assets\Scripts\MaterialEmission.cs" />
+    <Compile Include="Assets\Scripts\MaterialEmissionFish.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Git/smdjamjam/BeWaterMyFriend/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
