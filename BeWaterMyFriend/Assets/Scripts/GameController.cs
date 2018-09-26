@@ -78,7 +78,7 @@ public class GameController : MonoBehaviour {
             {
                 generatedPosition = GenerateRandomPosition();
                 generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, gameObject.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-                item = Instantiate(nItems[Random.Range(0, nItems.Length)], generatedPosition, Random.rotation);
+                item = Instantiate(nItems[Random.Range(0, nItems.Length)], generatedPosition, Quaternion.Euler(0, -90, 0));
                 item.transform.SetParent(parent.transform);
             }
             for (int i = 0; i < bonus; i++)
