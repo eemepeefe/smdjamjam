@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 299939562}
   - component: {fileID: 299939561}
   - component: {fileID: 299939560}
+  - component: {fileID: 299939564}
   m_Layer: 0
   m_Name: fish_prota
   m_TagString: Untagged
@@ -356,6 +357,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &299939564
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 299939558}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 225212c25d1123142add071f3e6a28e9, type: 3}
+  m_Controller: {fileID: 9100000, guid: c8ffcad59cfe2ab409e04afc9d2dfae5, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &399534093
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +517,53 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &531785587
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 534669905}
+    m_Modifications:
+    - target: {fileID: 4298100649695976, guid: 35bb21d042cb2e84f9640a874ffad45b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298100649695976, guid: 35bb21d042cb2e84f9640a874ffad45b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298100649695976, guid: 35bb21d042cb2e84f9640a874ffad45b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298100649695976, guid: 35bb21d042cb2e84f9640a874ffad45b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.11597734
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298100649695976, guid: 35bb21d042cb2e84f9640a874ffad45b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298100649695976, guid: 35bb21d042cb2e84f9640a874ffad45b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298100649695976, guid: 35bb21d042cb2e84f9640a874ffad45b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9932519
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298100649695976, guid: 35bb21d042cb2e84f9640a874ffad45b, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114249229415560242, guid: 35bb21d042cb2e84f9640a874ffad45b,
+        type: 2}
+      propertyPath: fish
+      value: 
+      objectReference: {fileID: 299939558}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35bb21d042cb2e84f9640a874ffad45b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,63 +1113,11 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1827234613
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1827234615}
-  - component: {fileID: 1827234614}
-  m_Layer: 0
-  m_Name: GameController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1827234614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1827234613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d543a216230dc8488e66c527264be2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fish: {fileID: 299939558}
-  cameraGame: {fileID: 1186192931022730, guid: bc8f898251fd9b641ad16f6ca182c7fc, type: 2}
-  pItems:
-  - {fileID: 1801804332487178, guid: 5910132cc224dce43b9cbce5067ab030, type: 2}
-  - {fileID: 1186192931022730, guid: bc8f898251fd9b641ad16f6ca182c7fc, type: 2}
-  nItems:
-  - {fileID: 1324540083070694, guid: 8a7bf690b95d6d14ea05d7ba2f97ed69, type: 2}
-  - {fileID: 1981672224178836, guid: e00fbb23d7c01d845b3a789ddc729c2b, type: 2}
-  - {fileID: 1617320782103134, guid: 8b1e9097dbb7d904b8184ef3ada2361d, type: 2}
-  dificulty: 1
-  bonus: 1
-  yPosition: 0
-  leftSide: {x: -4, y: 0, z: 0}
-  cameraOfsetZ: 1
-  cameraOfsetPosition: 50
-  sideOfset: 2
-  timeToGenerrate: 1
---- !u!4 &1827234615
+--- !u!4 &1827234615 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1827234613}
-  m_LocalRotation: {x: -0.11597734, y: -0, z: -0, w: 0.9932519}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 534669905}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_CorrespondingSourceObject: {fileID: 4298100649695976, guid: 35bb21d042cb2e84f9640a874ffad45b,
+    type: 2}
+  m_PrefabInternal: {fileID: 531785587}
 --- !u!1 &1862551598
 GameObject:
   m_ObjectHideFlags: 0
