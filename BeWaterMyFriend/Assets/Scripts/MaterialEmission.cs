@@ -60,4 +60,9 @@ public class MaterialEmission : MonoBehaviour {
     {
         intensityLight += 1;
     }
+
+    public void MoreIntensityLight()
+    {
+        intensityLight -= 1;
+    }
 }

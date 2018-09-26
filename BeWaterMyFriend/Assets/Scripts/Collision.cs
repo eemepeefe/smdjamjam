@@ -9,14 +9,36 @@ public class Collision : MonoBehaviour {
         if(other.tag == "AddLight")
         {
             Debug.Log("AddLight");
+            foreach (Transform child in transform) {
+                if(child.gameObject.tag == "Fish")
+                {
+                    child.gameObject.GetComponentInChildren<MaterialEmissionFish>().MoreIntensityLight();
+                }
+                else
+                {
+                    child.gameObject.GetComponent<MaterialEmission>().MoreIntensityLight();
+                }
+            }
         }
         if (other.tag == "LessLight")
         {
             Debug.Log("LessLight");
+            foreach (Transform child in transform)
+            {
+                if (child.gameObject.tag == "Fish")
+                {
+                    child.gameObject.GetComponentInChildren<MaterialEmissionFish>().LessIntensityLight();
+                }
+                else
+                {
+                    child.gameObject.GetComponent<MaterialEmission>().LessIntensityLight();
+                }
+            }
         }
         if (other.tag == "AddVel")
         {
             mainCamera.GetComponent<CameraMovement>().SetVelocity();
+            Debug.Log("SetVelocity");
         }
         if(other.tag == "Shark")
         {

@@ -8,6 +8,7 @@ TagManager:
   - AddLight
   - LessLight
   - AddVel
+  - Fish
   layers:
   - Default
   - TransparentFX
