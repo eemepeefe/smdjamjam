@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour {
     // Use this for initialization
     void Start() {
         fishScript = fish.GetComponent<FishMovement>();
-        
+        StartCoroutine(GenerateElements());
     }
 
     // Update is called once per frame
@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour {
         {
             x = Random.Range(0, 9);
             z = Random.Range(0, 9);
-        } while (positions[x, z] != true);
+        } while (positions[x, z] == true);
 
         positions[x, z] = true;
         return new Vector3(x, yPosition, z);
@@ -59,6 +59,7 @@ public class GameController : MonoBehaviour {
     {
         yield return new WaitForSeconds(timeToGenerrate);
         positions = new bool[9, 9];
+        
         for (int i = 0; i < dificulty; i++)
         {
             generatedPosition = GenerateRandomPosition();
@@ -69,7 +70,7 @@ public class GameController : MonoBehaviour {
         {
             generatedPosition = GenerateRandomPosition();
             generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, cameraGame.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-            Instantiate(pItems[Random.Range(0, pItems.Length - 1)], generatedPosition, Random.rotation);
+            Instantiate(pItems[Random.Range(0, pItems.Length - 1)], generatedPosition, Quaternion.Euler(-90,0,0));
         }
     }
 }
