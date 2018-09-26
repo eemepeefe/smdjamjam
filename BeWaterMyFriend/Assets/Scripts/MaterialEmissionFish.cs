@@ -9,6 +9,7 @@ public class MaterialEmissionFish : MonoBehaviour {
     public float leftLimit;
     public float rightLimit;
     private string name;
+    public float timeDestroy;
     // Use this for initialization
     void Start()
     {
@@ -20,10 +21,16 @@ public class MaterialEmissionFish : MonoBehaviour {
         mat.SetTexture("_EmissionMap", emissive);
         mat.SetColor("_EmissionColor", Color.white);
         mainCharacter = GameObject.Find("spot_light");
+        StartCoroutine(DestroyGamObject());
     }
 
     // Update is called once per frame
     void Update () {
 		
 	}
+    IEnumerator DestroyGamObject()
+    {
+        yield return new WaitForSeconds(timeDestroy);
+        Destroy(gameObject);
+    }
 }

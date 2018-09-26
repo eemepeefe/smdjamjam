@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour {
     public float cameraOfsetPosition;
     public float sideOfset;
     public float timeToGenerrate;
+    public GameObject parent;
+
 
     private bool[,] positions;
     // Use this for initialization
@@ -66,13 +68,13 @@ public class GameController : MonoBehaviour {
             {
                 generatedPosition = GenerateRandomPosition();
                 generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, gameObject.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-                Instantiate(nItems[Random.Range(0, nItems.Length)], generatedPosition, Random.rotation);
+                Instantiate(nItems[Random.Range(0, nItems.Length)], generatedPosition, Random.rotation).transform.SetParent(parent.transform);
             }
             for (int i = 0; i < bonus; i++)
             {
                 generatedPosition = GenerateRandomPosition();
                 generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, gameObject.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-                Instantiate(pItems[Random.Range(0, pItems.Length)], generatedPosition, Quaternion.Euler(0, -90, 0));
+                Instantiate(pItems[Random.Range(0, pItems.Length)], generatedPosition, Quaternion.Euler(0, -90, 0)).transform.SetParent(parent.transform);
             }
         }
     }
