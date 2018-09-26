@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d6d96eb183074429b307271fbb4e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: 0.1
+  movement: 1
   leftLimit: -4
   rightLimit: 4
 --- !u!65 &299939562
@@ -1000,19 +1000,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fish: {fileID: 299939558}
-  cameraGame: {fileID: 534669902}
+  cameraGame: {fileID: 1186192931022730, guid: bc8f898251fd9b641ad16f6ca182c7fc, type: 2}
   pItems:
-  - {fileID: 1890528763307706, guid: a5c72365ba58666488bfba2b3b7ac209, type: 2}
-  - {fileID: 1194830257175022, guid: 1929d9b4723fd254d89e029027b385d8, type: 2}
+  - {fileID: 1801804332487178, guid: 5910132cc224dce43b9cbce5067ab030, type: 2}
+  - {fileID: 1186192931022730, guid: bc8f898251fd9b641ad16f6ca182c7fc, type: 2}
   nItems:
-  - {fileID: 1482189981256886, guid: c998f583c69fcde47bda7a61fa934dff, type: 2}
+  - {fileID: 1324540083070694, guid: 8a7bf690b95d6d14ea05d7ba2f97ed69, type: 2}
+  - {fileID: 1981672224178836, guid: e00fbb23d7c01d845b3a789ddc729c2b, type: 2}
+  - {fileID: 1617320782103134, guid: 8b1e9097dbb7d904b8184ef3ada2361d, type: 2}
   dificulty: 1
   bonus: 1
-  yPosition: 0
+  yPosition: 0.1
   leftSide: {x: -4, y: 0, z: 0}
   cameraOfsetZ: 1
   cameraOfsetPosition: 1
-  sideOfset: -4
+  sideOfset: 1
   timeToGenerrate: 1
 --- !u!4 &1827234615
 Transform:

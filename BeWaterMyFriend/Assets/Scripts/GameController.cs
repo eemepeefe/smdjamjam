@@ -70,7 +70,7 @@ public class GameController : MonoBehaviour {
         {
             generatedPosition = GenerateRandomPosition();
             generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, cameraGame.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-            Instantiate(pItems[Random.Range(0, pItems.Length - 1)], generatedPosition, Quaternion.Euler(-90,0,0));
+            Instantiate(pItems[Random.Range(0, pItems.Length - 1)], generatedPosition, Quaternion.Euler(0,-90,0));
         }
     }
 }
