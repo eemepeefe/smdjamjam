@@ -18,6 +18,13 @@ public class GameController : MonoBehaviour {
     public float sideOfset;
     public float timeToGenerrate;
     public GameObject parent;
+    private GameObject item;
+    public int intensityLight;
+    public float leftLightLimit;
+    public float rightLightLimit;
+    public float ofsetLight;
+
+    private GameObject spotLight;
 
 
     private bool[,] positions;
@@ -25,6 +32,7 @@ public class GameController : MonoBehaviour {
     void Start() {
         fishScript = fish.GetComponent<FishMovement>();
         StartCoroutine(GenerateElements());
+        spotLight = GameObject.Find("Spot Light");
     }
 
     // Update is called once per frame
@@ -38,6 +46,8 @@ public class GameController : MonoBehaviour {
         {
             fishScript.SetFishRightPosition();
         }
+        leftLightLimit = spotLight.transform.position.x - ofsetLight;
+        rightLightLimit = spotLight.transform.position.x + ofsetLight;
 
     }
 
@@ -68,13 +78,15 @@ public class GameController : MonoBehaviour {
             {
                 generatedPosition = GenerateRandomPosition();
                 generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, gameObject.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-                Instantiate(nItems[Random.Range(0, nItems.Length)], generatedPosition, Random.rotation).transform.SetParent(parent.transform);
+                item = Instantiate(nItems[Random.Range(0, nItems.Length)], generatedPosition, Random.rotation);
+                item.transform.SetParent(parent.transform);
             }
             for (int i = 0; i < bonus; i++)
             {
                 generatedPosition = GenerateRandomPosition();
                 generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, gameObject.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-                Instantiate(pItems[Random.Range(0, pItems.Length)], generatedPosition, Quaternion.Euler(0, -90, 0)).transform.SetParent(parent.transform);
+                item = Instantiate(pItems[Random.Range(0, pItems.Length)], generatedPosition, Quaternion.Euler(0, -90, 0));
+                item.transform.SetParent(parent.transform);
             }
         }
     }
