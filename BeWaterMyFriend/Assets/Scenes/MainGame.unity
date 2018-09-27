@@ -650,15 +650,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4115159715124454, guid: 2f3cdc1648106054d9e5eef742c0a438, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.13999999
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4115159715124454, guid: 2f3cdc1648106054d9e5eef742c0a438, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.1458385
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 4115159715124454, guid: 2f3cdc1648106054d9e5eef742c0a438, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 5.3170247
+      value: 5.32
       objectReference: {fileID: 0}
     - target: {fileID: 4115159715124454, guid: 2f3cdc1648106054d9e5eef742c0a438, type: 2}
       propertyPath: m_LocalRotation.x
@@ -690,6 +690,16 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 87f0e8e9882ae094f80b472c139612c4, type: 2}
+    - target: {fileID: 108340542243207826, guid: 2f3cdc1648106054d9e5eef742c0a438,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 108512419556835512, guid: 2f3cdc1648106054d9e5eef742c0a438,
+        type: 2}
+      propertyPath: m_SpotAngle
+      value: 128
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3cdc1648106054d9e5eef742c0a438, type: 2}
   m_IsPrefabAsset: 0
@@ -733,10 +743,10 @@ MonoBehaviour:
   dificulty: 1
   bonus: 1
   yPosition: 0
-  leftSide: {x: -4, y: 0, z: 0}
+  leftSide: {x: -6, y: 0, z: 0}
   cameraOfsetZ: 2
   cameraOfsetPosition: 50
-  sideOfset: 2
+  sideOfset: 1.5
   timeToGenerrate: 1
   parent: {fileID: 1597527293}
   intensityLight: 0
