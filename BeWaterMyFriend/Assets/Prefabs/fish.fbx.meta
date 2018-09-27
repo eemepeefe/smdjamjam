@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f333b4eff3107744b54fb01b0bdfa6b
+guid: 494c3fe71c2b8614cb224b3b3755b75c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -115,13 +115,13 @@ ModelImporter:
       name: TurnLeft
       takeName: TurnLeft
       firstFrame: 0
-      lastFrame: 24
+      lastFrame: 19
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
-      hasAdditiveReferencePose: 1
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -143,15 +143,15 @@ ModelImporter:
       name: Armature|Idle
       takeName: Armature|Idle
       firstFrame: 0
-      lastFrame: 19
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0

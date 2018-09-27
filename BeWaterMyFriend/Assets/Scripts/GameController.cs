@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
@@ -42,15 +43,28 @@ public class GameController : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.A))
         {
+            fishScript.GetComponent<Animator>().SetBool("TurnLeft",true);
             fishScript.SetFishLeftPosition();
         }
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKeyUp(KeyCode.A))
         {
+            fishScript.GetComponent<Animator>().SetBool("TurnLeft", false);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            fishScript.GetComponent<Animator>().SetBool("TurnRight", true);
             fishScript.SetFishRightPosition();
+        }
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            fishScript.GetComponent<Animator>().SetBool("TurnRight", false);
         }
         leftLightLimit = spotLight.transform.position.x - ofsetLight;
         rightLightLimit = spotLight.transform.position.x + ofsetLight;
-
+        if(intensityLight > 3)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 
     Vector3 GenerateRandomPosition()
