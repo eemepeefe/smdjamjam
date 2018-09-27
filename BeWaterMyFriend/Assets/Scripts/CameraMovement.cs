@@ -19,7 +19,7 @@ public class CameraMovement : MonoBehaviour {
     {
         if (!velDoble)
         {
-            velocity *= 2;
+            velocity *= 3;
             velDoble = true;
             StartCoroutine(ReduceVel());
         }
@@ -30,6 +30,6 @@ public class CameraMovement : MonoBehaviour {
     {
         yield return new WaitForSeconds(timeToReduce);
         velDoble = false;
-        velocity /= 2;
+        velocity /= 3;
     }
 }

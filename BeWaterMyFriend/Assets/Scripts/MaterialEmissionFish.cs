@@ -27,6 +27,7 @@ public class MaterialEmissionFish : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        intensityLight = gameController.intensityLight;
         if (gameObject.transform.position.x > gameController.leftLightLimit && gameObject.transform.position.x < gameController.rightLightLimit)
         {
             SetLight();

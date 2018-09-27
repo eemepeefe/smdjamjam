@@ -25,7 +25,8 @@ public class MaterialEmission : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(gameObject.transform.position.x > gameController.leftLightLimit && gameObject.transform.position.x < gameController.rightLightLimit)
+        intensityLight = gameController.intensityLight;
+        if (gameObject.transform.position.x > gameController.leftLightLimit && gameObject.transform.position.x < gameController.rightLightLimit)
         {
             SetLight();
         }

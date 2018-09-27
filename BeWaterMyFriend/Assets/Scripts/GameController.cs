@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
     public GameObject fish;
@@ -23,7 +24,7 @@ public class GameController : MonoBehaviour {
     public float leftLightLimit;
     public float rightLightLimit;
     public float ofsetLight;
-
+    public Slider healthSlider;
     private GameObject spotLight;
 
 
@@ -33,6 +34,7 @@ public class GameController : MonoBehaviour {
         fishScript = fish.GetComponent<FishMovement>();
         StartCoroutine(GenerateElements());
         spotLight = GameObject.Find("Spot Light");
+        intensityLight = 0;
     }
 
     // Update is called once per frame
@@ -78,7 +80,7 @@ public class GameController : MonoBehaviour {
             {
                 generatedPosition = GenerateRandomPosition();
                 generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, gameObject.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-                item = Instantiate(nItems[Random.Range(0, nItems.Length)], generatedPosition, Quaternion.Euler(0, -90, 0));
+                item = Instantiate(nItems[Random.Range(0, nItems.Length)], generatedPosition, Quaternion.Euler(-90, 0, 0));
                 item.transform.SetParent(parent.transform);
             }
             for (int i = 0; i < bonus; i++)
@@ -89,6 +91,18 @@ public class GameController : MonoBehaviour {
                 item.transform.SetParent(parent.transform);
             }
         }
+    }
+
+    public void LessIntensityLight()
+    {
+        intensityLight += 1;
+        healthSlider.value -= 25;
+    }
+
+    public void MoreIntensityLight()
+    {
+        intensityLight -= 1;
+        healthSlider.value += 25;
     }
 }
    
