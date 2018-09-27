@@ -650,7 +650,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4115159715124454, guid: 2f3cdc1648106054d9e5eef742c0a438, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4115159715124454, guid: 2f3cdc1648106054d9e5eef742c0a438, type: 2}
       propertyPath: m_LocalPosition.y
@@ -740,6 +740,9 @@ MonoBehaviour:
   - {fileID: 1731799530952598, guid: f5dddec76aff4c5449ff182f59fc23c5, type: 2}
   - {fileID: 1935040926817710, guid: 32fb389b97756a04fa412eb2cc0f3ff2, type: 2}
   - {fileID: 1964610274928524, guid: 01417c7a1bd8ee149949d46af87a2415, type: 2}
+  - {fileID: 1658054821938558, guid: 790e03c644d58b343b6c1cd6fd3cca36, type: 2}
+  - {fileID: 1427577611301154, guid: 9e7996091ee030149a9d55a8aea31d2a, type: 2}
+  - {fileID: 1033293695749268, guid: 531a8d6ea51a99b4db44df0a595b7a4c, type: 2}
   dificulty: 1
   bonus: 1
   yPosition: 0
@@ -752,7 +755,7 @@ MonoBehaviour:
   intensityLight: 0
   leftLightLimit: 0
   rightLightLimit: 0
-  ofsetLight: 2
+  ofsetLight: 4
   healthSlider: {fileID: 371395390}
 --- !u!4 &1827234615
 Transform:

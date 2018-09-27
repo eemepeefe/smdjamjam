@@ -41,21 +41,21 @@ public class GameController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             fishScript.GetComponent<Animator>().SetBool("TurnLeft",true);
             fishScript.SetFishLeftPosition();
         }
-        else if (Input.GetKeyUp(KeyCode.A))
+        else if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
             fishScript.GetComponent<Animator>().SetBool("TurnLeft", false);
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             fishScript.GetComponent<Animator>().SetBool("TurnRight", true);
             fishScript.SetFishRightPosition();
         }
-        else if (Input.GetKeyUp(KeyCode.D))
+        else if (Input.GetKeyUp(KeyCode.RightArrow))
         {
             fishScript.GetComponent<Animator>().SetBool("TurnRight", false);
         }
@@ -63,7 +63,7 @@ public class GameController : MonoBehaviour {
         rightLightLimit = spotLight.transform.position.x + ofsetLight;
         if(intensityLight > 3)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
     }
 
@@ -111,12 +111,16 @@ public class GameController : MonoBehaviour {
     {
         intensityLight += 1;
         healthSlider.value -= 25;
+        GameObject.Find("Halo").GetComponent<Light>().intensity /= 1.2f;
+        GameObject.Find("Spot Light").GetComponent<Light>().range /= 1.2f;
     }
 
     public void MoreIntensityLight()
     {
         intensityLight -= 1;
         healthSlider.value += 25;
+        GameObject.Find("Halo").GetComponent<Light>().intensity *= 1.2f;
+        GameObject.Find("Spot Light").GetComponent<Light>().range *= 1.2f;
     }
 }
    
