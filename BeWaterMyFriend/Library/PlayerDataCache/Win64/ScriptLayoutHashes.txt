@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Pepe Segade/Desktop/Uni/game_jam_talentum/git/smdjamjam/Nueva carpeta/BeWaterMyFriend.exe
+D:/Git/smdjamjam/BuildDefinitivo/BeWaterMyFriend.exe
 SceneListBegin?
 Assets/Scenes/StartMenu.unity
 Assets/Scenes/MainGame.unity
