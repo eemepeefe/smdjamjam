@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 65799638273734572}
   m_Layer: 0
   m_Name: bag_n
-  m_TagString: Untagged
+  m_TagString: LessLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

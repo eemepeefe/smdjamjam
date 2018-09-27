@@ -35,11 +35,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4506131779462964}
   - component: {fileID: 95019213389649528}
-  - component: {fileID: 54632078761695148}
-  - component: {fileID: 136344677665181898}
   m_Layer: 0
   m_Name: powerup_fish_animated
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,9 +67,11 @@ GameObject:
   - component: {fileID: 4338439546494560}
   - component: {fileID: 137737210563489558}
   - component: {fileID: 114513091965536608}
+  - component: {fileID: 54774463886408860}
+  - component: {fileID: 65099091052112086}
   m_Layer: 0
   m_Name: pececillo
-  m_TagString: Untagged
+  m_TagString: AddVel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,7 +196,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1196196496408460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.02211, y: -29.356817, z: -8.605095}
+  m_LocalPosition: {x: 114.65542, y: 32.988007, z: -72.56677}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4446867184209416}
@@ -218,12 +218,12 @@ Transform:
   m_Father: {fileID: 4147339980409104}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &54632078761695148
+--- !u!54 &54774463886408860
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1196196496408460}
+  m_GameObject: {fileID: 1379440410491466}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -233,6 +233,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65099091052112086
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1379440410491466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.065127976, y: 0.018869795, z: 0.034377128}
+  m_Center: {x: 0.013337333, y: -0.000000015057115, z: -0.00006126845}
 --- !u!95 &95019213389649528
 Animator:
   serializedVersion: 3
@@ -265,19 +277,8 @@ MonoBehaviour:
   emissive: {fileID: 0}
   leftLimit: 0
   rightLimit: 0
---- !u!136 &136344677665181898
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1196196496408460}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 2
-  m_Height: 2
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  timeDestroy: 0
+  intensityLight: 0
 --- !u!137 &137737210563489558
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
