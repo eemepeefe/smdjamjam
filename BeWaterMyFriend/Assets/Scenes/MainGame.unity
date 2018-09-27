@@ -815,6 +815,18 @@ Prefab:
       propertyPath: lightAudio
       value: 
       objectReference: {fileID: 8300000, guid: 30733f14dbb8b6f4cb994a3b0e78dc2c, type: 3}
+    - target: {fileID: 114491906841068836, guid: 2f3cdc1648106054d9e5eef742c0a438,
+        type: 2}
+      propertyPath: ligthParticles
+      value: 
+      objectReference: {fileID: 1974895901993658, guid: e428e3d74aad7854f85b65bf5d1fdfb0,
+        type: 2}
+    - target: {fileID: 114491906841068836, guid: 2f3cdc1648106054d9e5eef742c0a438,
+        type: 2}
+      propertyPath: velParticles
+      value: 
+      objectReference: {fileID: 1142294731422610, guid: 721dfdc13e500694b964556cd29d3246,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3cdc1648106054d9e5eef742c0a438, type: 2}
   m_IsPrefabAsset: 0
@@ -873,6 +885,7 @@ MonoBehaviour:
   rightLightLimit: 0
   ofsetLight: 4
   healthSlider: {fileID: 371395390}
+  bubbles: {fileID: 1760506213410704, guid: 297b38b74edbdc94ea6b469eab60a584, type: 2}
 --- !u!4 &1827234615
 Transform:
   m_ObjectHideFlags: 0

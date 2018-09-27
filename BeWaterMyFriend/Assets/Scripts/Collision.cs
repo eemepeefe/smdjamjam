@@ -10,6 +10,9 @@ public class Collision : MonoBehaviour {
     public AudioClip sharkAudio;
     public AudioClip velAudio;
     public AudioClip lightAudio;
+    public GameObject velParticles;
+    public GameObject ligthParticles;
+    private GameObject particleGameObject;
 
     AudioSource hitAudio;
 
@@ -22,6 +25,8 @@ public class Collision : MonoBehaviour {
             gameObject.GetComponent<AudioSource>().Play();
 
             Destroy(other.gameObject);
+            particleGameObject = Instantiate(ligthParticles, gameObject.transform.position+ new Vector3(0f,0f,1f), ligthParticles.transform.rotation);
+            particleGameObject.transform.SetParent(gameObject.transform);
         }
         if (other.tag == "LessLight")
         {
@@ -36,6 +41,8 @@ public class Collision : MonoBehaviour {
             gameObject.GetComponent<AudioSource>().clip = velAudio;
             gameObject.GetComponent<AudioSource>().Play();
             Destroy(other.gameObject);
+            particleGameObject = Instantiate(velParticles, gameObject.transform.position + new Vector3(0f, 0f, 1f), velParticles.transform.rotation);
+            particleGameObject.transform.SetParent(gameObject.transform);
         }
         if(other.tag == "Shark")
         {
