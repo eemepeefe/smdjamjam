@@ -743,6 +743,7 @@ MonoBehaviour:
   - {fileID: 1658054821938558, guid: 790e03c644d58b343b6c1cd6fd3cca36, type: 2}
   - {fileID: 1427577611301154, guid: 9e7996091ee030149a9d55a8aea31d2a, type: 2}
   - {fileID: 1033293695749268, guid: 531a8d6ea51a99b4db44df0a595b7a4c, type: 2}
+  - {fileID: 1735423605121974, guid: 9c675c07d73a9d542bf8f4c9e9cabbe4, type: 2}
   dificulty: 1
   bonus: 1
   yPosition: 0

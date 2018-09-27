@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour {
     public float ofsetLight;
     public Slider healthSlider;
     private GameObject spotLight;
-
+    int random;
 
     private bool[,] positions;
     // Use this for initialization
@@ -94,14 +94,16 @@ public class GameController : MonoBehaviour {
             {
                 generatedPosition = GenerateRandomPosition();
                 generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, gameObject.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-                item = Instantiate(nItems[Random.Range(0, nItems.Length)], generatedPosition, Quaternion.Euler(-90, 0, 0));
+                random = Random.Range(0, nItems.Length);
+                item = Instantiate(nItems[random], generatedPosition, nItems[random].transform.rotation);
                 item.transform.SetParent(parent.transform);
             }
             for (int i = 0; i < bonus; i++)
             {
                 generatedPosition = GenerateRandomPosition();
                 generatedPosition = new Vector3(leftSide.x + generatedPosition.x * sideOfset, yPosition, gameObject.transform.position.z + cameraOfsetPosition + generatedPosition.z * cameraOfsetZ);
-                item = Instantiate(pItems[Random.Range(0, pItems.Length)], generatedPosition, Quaternion.Euler(0, -90, 0));
+                random = Random.Range(0, pItems.Length);
+                item = Instantiate(pItems[random], generatedPosition, pItems[random].transform.rotation);
                 item.transform.SetParent(parent.transform);
             }
         }
@@ -117,10 +119,13 @@ public class GameController : MonoBehaviour {
 
     public void MoreIntensityLight()
     {
-        intensityLight -= 1;
-        healthSlider.value += 25;
-        GameObject.Find("Halo").GetComponent<Light>().intensity *= 1.2f;
-        GameObject.Find("Spot Light").GetComponent<Light>().range *= 1.2f;
+        if (intensityLight > 0)
+        {
+            intensityLight -= 1;
+            healthSlider.value += 25;
+            GameObject.Find("Halo").GetComponent<Light>().intensity *= 1.2f;
+            GameObject.Find("Spot Light").GetComponent<Light>().range *= 1.2f;
+        }
     }
 }
    

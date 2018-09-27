@@ -9,6 +9,7 @@ public class CameraMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         velDoble = false;
+        StartCoroutine(AddDificulty());
 	}
 	
 	// Update is called once per frame
@@ -31,5 +32,15 @@ public class CameraMovement : MonoBehaviour {
         yield return new WaitForSeconds(timeToReduce);
         velDoble = false;
         velocity /= 3;
+    }
+
+    IEnumerator AddDificulty()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(10);
+            velocity += 0.03f;
+        }
+       
     }
 }

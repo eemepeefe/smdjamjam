@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collision : MonoBehaviour {
     private GameObject mainCamera;
@@ -24,7 +25,7 @@ public class Collision : MonoBehaviour {
         }
         if(other.tag == "Shark")
         {
-            Destroy(other.gameObject);
+            SceneManager.LoadScene(2);
         }
     }
 
