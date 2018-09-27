@@ -36,8 +36,10 @@ public class GameController : MonoBehaviour {
     void Start() {
         fishScript = fish.GetComponent<FishMovement>();
         StartCoroutine(GenerateElements());
+        StartCoroutine(GeneratePositiveElements());
         spotLight = GameObject.Find("Spot Light");
         intensityLight = 0;
+
     }
 
     // Update is called once per frame
@@ -61,6 +63,11 @@ public class GameController : MonoBehaviour {
         {
             fishScript.GetComponent<Animator>().SetBool("TurnRight", false);
         }
+        else if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         leftLightLimit = spotLight.transform.position.x - ofsetLight;
         rightLightLimit = spotLight.transform.position.x + ofsetLight;
         if(intensityLight > 3)
@@ -104,6 +111,16 @@ public class GameController : MonoBehaviour {
 
 
             }
+        }
+    }
+
+    IEnumerator GeneratePositiveElements()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(timeToGenerrate * 10);
+            positions = new bool[9, 9];
+            
             for (int i = 0; i < bonus; i++)
             {
                 generatedPosition = GenerateRandomPosition();

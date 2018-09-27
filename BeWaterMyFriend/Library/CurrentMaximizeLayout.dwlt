@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 683, y: 442}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 681, y: 442}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 0
-  controlID: 3974
+  controlID: 2876
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 442}
   m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 3975
+  controlID: 2877
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 3953
+  controlID: 2878
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,9 +203,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 8e94fdffc6a0fdffc0e1feff043bffff00000000006b0000106b0000
+    m_SelectedIDs: 00510000
+    m_LastClickedID: 20736
+    m_ExpandedIDs: c64affff7881ffff5ea1ffff60a1ffff30e1ffff60f5ffff62fbffff000000000a40000054490000e4500000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -224,7 +224,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
   m_ExpandedScenes:
-  - MainGame
+  - Credits
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -282,14 +282,14 @@ MonoBehaviour:
     height: 236
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1124.715815395189
+  lastFramingTime: 597.1068724093848
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 91.518555, y: -7.379364, z: 112.65759}
+    m_Target: {x: 11.680193, y: 1.0553489, z: -43.993767}
     speed: 2
-    m_Value: {x: 91.518555, y: -7.379364, z: 112.65759}
+    m_Value: {x: 11.680193, y: 1.0553489, z: -43.993767}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -321,9 +321,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.10808955, y: 0.012523233, z: -0.0013615515, w: -0.9940614}
   m_Size:
-    m_Target: 316.76242
+    m_Target: 18.30063
     speed: 2
-    m_Value: 316.76242
+    m_Value: 18.30063
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -440,8 +440,12 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 0}
-  m_BreadCrumbs: []
+  m_AnimatorController: {fileID: 9100000, guid: c8ffcad59cfe2ab409e04afc9d2dfae5,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1107328464053987024, guid: c8ffcad59cfe2ab409e04afc9d2dfae5,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -528,9 +532,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: da630000
-    m_LastClickedID: 25562
-    m_ExpandedIDs: 000000002a6100000a6a000000ca9a3b
+    m_SelectedIDs: 08110000
+    m_LastClickedID: 4360
+    m_ExpandedIDs: 00000000700b00003c1c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -558,7 +562,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002a6100000a6a000000ca9a3b
+    m_ExpandedIDs: 00000000700b00003c1c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -583,8 +587,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 00510000
+    m_LastClickedInstanceID: 20736
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000462e0000b8380000ba3200006446000082310000522b00001e2b0000b8300000
     m_RenameOverlay:
@@ -656,8 +660,8 @@ MonoBehaviour:
     y: 0
     width: 552
     height: 947
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}

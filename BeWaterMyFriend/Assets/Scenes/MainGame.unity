@@ -827,6 +827,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1142294731422610, guid: 721dfdc13e500694b964556cd29d3246,
         type: 2}
+    - target: {fileID: 108340542243207826, guid: 2f3cdc1648106054d9e5eef742c0a438,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3cdc1648106054d9e5eef742c0a438, type: 2}
   m_IsPrefabAsset: 0
@@ -871,7 +876,7 @@ MonoBehaviour:
   - {fileID: 1427577611301154, guid: 9e7996091ee030149a9d55a8aea31d2a, type: 2}
   - {fileID: 1033293695749268, guid: 531a8d6ea51a99b4db44df0a595b7a4c, type: 2}
   - {fileID: 1735423605121974, guid: 9c675c07d73a9d542bf8f4c9e9cabbe4, type: 2}
-  dificulty: 1
+  dificulty: 2
   bonus: 1
   yPosition: 0
   leftSide: {x: -6, y: 0, z: 0}

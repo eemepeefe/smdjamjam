@@ -16,5 +16,9 @@ public class GoStart : MonoBehaviour {
         {
             SceneManager.LoadScene(0);
         }
-	}
+        else if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }

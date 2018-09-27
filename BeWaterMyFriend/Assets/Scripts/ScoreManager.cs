@@ -19,15 +19,19 @@ public class ScoreManager : MonoBehaviour
         // Set up the reference.
         text = GetComponent<Text>();
 
+        
+    }
+
+    private void Start()
+    {
         // Reset the score.
         score = 0;
     }
 
-
     void Update()
     {
         // Set the displayed text to be the word "Score" followed by the score value.
-        score = Time.time;
+        score = Time.timeSinceLevelLoad; ;
         text.text = "Score: " + (int)score +" s";
     }
 }
