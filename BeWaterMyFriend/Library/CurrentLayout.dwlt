@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 7063
+  controlID: 7578
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 7064
+  controlID: 7579
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 7065
+  controlID: 7580
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 16}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -369,23 +369,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 96c3ffff
-    m_LastClickedID: -15466
-    m_ExpandedIDs: 16fdfdff3612feff2613feff56cbfeffb8d9ffff0000000088370000a6370000e0370000
+    m_SelectedIDs: c45b0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 1eceffff28ceffff2cceffff00000000fa38000008390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: fish
-      m_OriginalName: fish
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -15466
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -426,9 +426,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.02206, y: -2.2009778, z: -42.429123}
+    m_Target: {x: -9.637876, y: -1.1536996, z: -44.32495}
     speed: 2
-    m_Value: {x: -4.02206, y: -2.2009778, z: -42.429123}
+    m_Value: {x: -9.637876, y: -1.1536996, z: -44.32495}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -456,13 +456,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.20703892, y: 0.5833281, z: -0.15693417, w: -0.769568}
+    m_Target: {x: -0.07646254, y: 0.7371911, z: -0.084636934, w: -0.66598755}
     speed: 2
-    m_Value: {x: -0.20703892, y: 0.5833281, z: -0.15693417, w: -0.769568}
+    m_Value: {x: -0.07646254, y: 0.737191, z: -0.084636934, w: -0.66598755}
   m_Size:
-    m_Target: 12.151515
+    m_Target: 15.824433
     speed: 2
-    m_Value: 12.151515
+    m_Value: 15.824433
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -545,14 +545,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.614125
+    - e00: 0.6302872
       e01: 0
       e02: 0
-      e03: 151.53526
+      e03: 133.31497
       e10: 0
-      e11: 0.614125
+      e11: 0.6302872
       e12: 0
-      e13: 208.85875
+      e13: 273.55695
       e20: 0
       e21: 0
       e22: 1
@@ -612,20 +612,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Eva\Desktop\JamJam2018\smdjamjam\BeWaterMyFriend
+  m_LastProjectPath: D:\Git\smdjamjam\BeWaterMyFriend
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 123}
-    m_SelectedIDs: fc340000
-    m_LastClickedID: 13564
-    m_ExpandedIDs: 000000003433000074360000ea36000000ca9a3b
+    scrollPos: {x: 0, y: 107}
+    m_SelectedIDs: 9e370000
+    m_LastClickedID: 14238
+    m_ExpandedIDs: 0000000090340000d23700006a38000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -653,7 +653,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003433000074360000ea36000000ca9a3b
+    m_ExpandedIDs: 0000000090340000d23700006a38000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -680,8 +680,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000462e0000b8380000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000462e0000b838000080330000d4470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
