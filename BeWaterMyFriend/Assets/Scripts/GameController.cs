@@ -28,6 +28,8 @@ public class GameController : MonoBehaviour {
     public Slider healthSlider;
     private GameObject spotLight;
     int random;
+    public GameObject bubbles;
+    private GameObject bubbleInstance;
 
     private bool[,] positions;
     // Use this for initialization
@@ -97,6 +99,10 @@ public class GameController : MonoBehaviour {
                 random = Random.Range(0, nItems.Length);
                 item = Instantiate(nItems[random], generatedPosition, nItems[random].transform.rotation);
                 item.transform.SetParent(parent.transform);
+                bubbleInstance = Instantiate(bubbles, generatedPosition, bubbles.transform.rotation);
+                bubbleInstance.transform.SetParent(item.transform);
+
+
             }
             for (int i = 0; i < bonus; i++)
             {
