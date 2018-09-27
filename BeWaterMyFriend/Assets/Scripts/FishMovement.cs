@@ -6,10 +6,15 @@ public class FishMovement : MonoBehaviour {
     public float movement;
     public float leftLimit;
     public float rightLimit;
-	// Use this for initialization
-	void Start () {
-		
-	}
+    Animator m_Animator;
+    // Use this for deciding if the GameObject can jump or not
+    bool right;
+    bool left;
+    // Use this for initialization
+    void Start () {
+        
+        // The GameObject cannot jump
+    }
 	
 	// Update is called once per frame
 	void Update () {

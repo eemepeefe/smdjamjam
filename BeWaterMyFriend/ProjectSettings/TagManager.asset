@@ -9,6 +9,7 @@ TagManager:
   - LessLight
   - AddVel
   - Fish
+  - Shark
   layers:
   - Default
   - TransparentFX

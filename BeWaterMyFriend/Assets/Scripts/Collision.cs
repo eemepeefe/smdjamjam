@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collision : MonoBehaviour {
     private GameObject mainCamera;
@@ -9,22 +10,22 @@ public class Collision : MonoBehaviour {
     {
         if(other.tag == "AddLight")
         {
-            Debug.Log("AddLight");
             GameObject.Find("GameController").GetComponent<GameController>().MoreIntensityLight();
+            Destroy(other.gameObject);
         }
         if (other.tag == "LessLight")
         {
-            Debug.Log("LessLight");
             GameObject.Find("GameController").GetComponent<GameController>().LessIntensityLight();
+            Destroy(other.gameObject);
         }
         if (other.tag == "AddVel")
         {
             mainCamera.GetComponent<CameraMovement>().SetVelocity();
-            Debug.Log("SetVelocity");
+            Destroy(other.gameObject);
         }
         if(other.tag == "Shark")
         {
-            Debug.Log("GameOver");
+            SceneManager.LoadScene(2);
         }
     }
 
