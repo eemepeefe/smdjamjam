@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ChangeScene : MonoBehaviour {
     public Sprite negro;
+    public float seconds = 0.5f;
 	// Use this for initialization
 	void Start () {
 		
@@ -22,7 +23,7 @@ public class ChangeScene : MonoBehaviour {
     }
     IEnumerator ChangeMainScene()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(seconds);
         SceneManager.LoadScene(1);
     }
 }
