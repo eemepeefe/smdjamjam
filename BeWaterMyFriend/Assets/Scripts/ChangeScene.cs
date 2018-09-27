@@ -22,7 +22,7 @@ public class ChangeScene : MonoBehaviour {
     }
     IEnumerator ChangeMainScene()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(1);
     }
 }
